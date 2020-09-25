@@ -135,13 +135,22 @@ li.active a::before{
 }
 .rappresent, .implement{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 842px;
     align-items: center;
 }
 .rappresent__box{
     width: 407px;
     height: 233px;
+}
+.implement{
+    justify-content: center;
+}
+.implement__img{
+    margin-right: 139px;
+}
+.implement__box{
+    margin-right: 120px;
 }
 .rappresent__box-title, .implement__box-title{
     font-weight: bold;
@@ -167,7 +176,7 @@ li.active a::before{
     height: 184px;
 }
 .subscribe{
-    height: 598px;
+    height: 524px;
 }
 .subscribe__title{
     font-weight: bold;
@@ -177,7 +186,7 @@ li.active a::before{
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding-top: 217px;
+    padding-top: 199px;
 }
 .subscribe__form{
     margin: 30px auto 0;
@@ -209,7 +218,7 @@ li.active a::before{
     background: #4e7781;
 }
 .download{
-    height: 468px;
+    height: 343px;
 }
 .download__title{
     margin: 120px auto 20px;
@@ -306,19 +315,31 @@ li.active a::before{
 .footer__nav li a:hover{
     opacity: 1;
 }
+.community{
+    background: #F5F6F7;
+}
 .community__box{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     height: 504px;
+    overflow: hidden;
+    //align-items: center;
+    margin: 0 auto;
+    padding-top: 80px;
 }
 .community__box-left{
     width: 298px;
     height: 175px;
     text-align: center;
-    margin-right: 139px;
+    margin-right: 20px;
+    margin-left: 153px;
+    padding-top: 77px;    
+}
+.community__box-right{
+    //padding-top: -50px;
 }
 .community__title{
-    margin: 20px auto 10px;
+    margin: 17px auto 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -334,8 +355,30 @@ li.active a::before{
 }
 .slider__items{
     width: 894px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 120px;
 }
 /* .last{
     overflow: hidden;
     margin-right: -200px;
 } */
+.my_arrows{
+    width: 100%;
+    padding-right: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+font-size: 18px;
+line-height: 140%;
+color: #373737;
+}
+.arrow-left{
+    font-weight: 500;
+    margin-right: 21px;
+}
+.arrow-right{
+    font-weight: 500;
+    margin-left: 21px;
+}
